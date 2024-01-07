@@ -4,7 +4,7 @@ import HomeHero from "./hero";
 
 export default function HomePage() {
   return (
-    <div className="w-full ">
+    <div className="w-full flex flex-col gap-y-20">
       <HomeHero />
       <HomeFeatures />
       <HomeTrendingNow />

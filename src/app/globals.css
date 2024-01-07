@@ -78,7 +78,7 @@
       font-feature-settings: "rlig" 1, "calt" 1;
     }
     h1 {
-      @apply font-pfd leading-[70px];
+      @apply font-pfd text-[50px] md:text-[60px] lg:text-[72px] leading-[70px];
     }
 
     h2 {

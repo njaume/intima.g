@@ -30,6 +30,7 @@ module.exports = {
       },
       colors: {
         pink_primary: "#FFC0CB",
+        red_primary: "#8B0000",
         border: "var(--border)",
         input: "hsl(var(--input))",
         ring: "var(--ring)",

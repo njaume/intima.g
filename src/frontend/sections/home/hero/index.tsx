@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function HomeHero() {
   return (
-    <section className="grid grid-cols-2 gap-20 my-20">
+    <section className="grid grid-cols-2 gap-20 mt-[200px] h-screen">
       <div className="col-span-1">
-        <h1 className="text-pink_primary text-[50px] md:text-[60px] lg:text-[72px] font-bold whitespace-pre-line">
+        <h1 className="text-pink_primary font-bold whitespace-pre-line">
           Your place for inmersive lectures
         </h1>
         <div className="mt-10">
@@ -13,11 +13,11 @@ export default function HomeHero() {
             Create short stories, interact with your favourite characters & make
             decisions.
           </p>
-          <Button className="mt-10">Try it now</Button>
+          <Button className="mt-10 bg-red_primary">Try it now</Button>
         </div>
       </div>
-      <div className="col-span-1 relative h-[664px]">
-        <Image src={"/assets/hero.png"} fill objectFit="fill" alt="Intima.g" />
+      <div className="col-span-1 relative 2xl:h-[600px]">
+        <Image src={"/assets/hero.png"} width={800} height={600} alt="Intima.g" />
       </div>
     </section>
   );
