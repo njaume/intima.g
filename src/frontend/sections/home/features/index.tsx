@@ -35,7 +35,7 @@ const items = [
 
 const HomeFeatures = () => {
   return (
-    <div className="my-20">
+    <div className="mb-[120px]">
       <h2 className={`mb-11 text-orange_primary`}>{"Create your own experience"}</h2>
       <div className={"grid grid-cols-3 gap-10"}>
         {items.map((item) => {

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HomeHero() {
   return (
-    <section className="grid grid-cols-2 gap-20 mt-[200px] h-screen">
+    <section className="grid grid-cols-2 gap-20 mt-[200px] mb-[120px]">
       <div className="col-span-1">
         <h1 className="text-pink_primary font-bold whitespace-pre-line">
           Your place for inmersive lectures

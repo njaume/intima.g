@@ -39,10 +39,10 @@ const items = [
   },
 ];
 
-const HomeTrendingNow = () => {
+const SimilarStories = () => {
   return (
     <section className="mb-[120px]">
-      <h2 className={`mb-11 text-orange_primary`}>{"Trending Now"}</h2>
+      <h2 className={`mb-11 text-orange_primary`}>{"Similar Stories"}</h2>
       <div className={"w-full"}>
         <Carousel>
           <CarouselContent className="">
@@ -65,4 +65,4 @@ const HomeTrendingNow = () => {
   );
 };
 
-export default HomeTrendingNow;
+export default SimilarStories;
