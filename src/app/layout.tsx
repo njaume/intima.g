@@ -3,11 +3,17 @@ import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Layout from "@/frontend/components/business/layout";
 
-const PFD = Playfair_Display({ subsets: ["latin"], variable: '--font-pfd', });
-const lato = Lato({ subsets: ["latin"], weight: "400",  variable: '--font-lato' });
+const PFD = Playfair_Display({ subsets: ["latin"], variable: "--font-pfd" });
+const lato = Lato({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lato",
+});
+import { UserProvider } from "@auth0/nextjs-auth0/client";
+
 export const metadata: Metadata = {
   title: "Intima.g",
-  description: "Ai powered stories",
+  description: "Ai powered erotic stories",
 };
 
 export default function RootLayout({
@@ -17,9 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${PFD.variable} ${lato.variable}`}>
-        <Layout>{children}</Layout>
-      </body>
+      <UserProvider>
+        <body className={`${PFD.variable} ${lato.variable}`}>
+          <Layout>{children}</Layout>
+        </body>
+      </UserProvider>
     </html>
   );
 }
